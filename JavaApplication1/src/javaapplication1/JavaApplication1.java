@@ -21,6 +21,7 @@ public class JavaApplication1 {
         Scanner show = new Scanner(System.in);
         System.out.print("Input Deret Fibonacci : ");
         int n = show.nextInt();
+        int hasil = 0;
         long fib[] = new long[n];
         fib[0] = 1;
         fib[1] = 1;
@@ -31,8 +32,10 @@ public class JavaApplication1 {
         }
          
         for (int i =0  ;i < n; i++) {
-            System.out.print(fib[i] +  " ");
+            System.out.print(fib[i] +  " \n");
+            hasil = hasil + (int) fib [i];
         }
+        System.out.println("Hasil Deret : "+hasil);
     }
-    }
+ }
    
