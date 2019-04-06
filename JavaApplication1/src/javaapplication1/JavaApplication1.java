@@ -30,8 +30,8 @@ public class JavaApplication1 {
             fib[i] = fib[i-1] + fib[i-2];
         }
          
-        for (int i =0  ;i < n; i++) {
-            System.out.print(fib[i] +  " ");
+        for (int i = fib.length  ;i != 0; i--) {
+            System.out.print(fib[i-1] +  " \n");
         }
     }
     }
